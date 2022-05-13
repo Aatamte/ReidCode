@@ -1,8 +1,14 @@
+from utils.test_functions import complete
 
-def print_hi(name):
-    print(f'Hi, {name}')
+
+def print_hi():
+    return "Hello"
 
 
 if __name__ == '__main__':
-    print_hi('Reid')
+    var = print_hi()
+    print(var)
+    assert print_hi() == "Hello"
+
+
 
